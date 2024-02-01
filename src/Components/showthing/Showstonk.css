@@ -1,0 +1,8 @@
+.headers{
+    display: flex;
+  flex-direction: row;
+}
+.logo1{
+    height: 90px;
+    width: 90px;
+}

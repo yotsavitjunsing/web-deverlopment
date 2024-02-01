@@ -1,0 +1,140 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 100%;
+    background: linear-gradient(#82cf07e1,#07e668e3);
+    padding-bottom: 30px;
+    width: 600px  ;
+    border-radius: 8px;
+    
+    
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+}
+.regis-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 20px;
+}
+.logo{
+    height: 120px;
+    width: 120px;
+}
+.under{
+    width: 60px;
+    height: 0px;
+    border-radius: 10px;
+}
+.inputs{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
+}
+
+
+
+
+.input img{
+    margin: 0px 30px;
+
+}
+
+
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color:#808080;
+    font-size: 20px;
+    
+}
+
+.input-date input{
+    margin: auto;
+    
+}
+.policy{
+    margin: auto;
+    color:#eaeaea;
+    cursor: pointer;
+}
+.submit-container{
+    display: flex;
+    gap:30px;
+    width: 100%;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color:#07e668e3 ;
+    background: #ffffff;
+    border-radius: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.click{
+    background: #eaeaea;
+    color: #676767;
+
+}
+.eyeicon{
+    height: 20px;
+    width: 20px;
+}
+.login{
+    margin: auto;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit:active{
+    transform: scale(0.96);
+    background: linear-gradient(#82cf07e1,#07e668e3);
+    color: #000;
+}
+.login:active{
+    transform: scale(0.96);
+    color: lawngreen;
+}
+.signup{
+    margin: auto;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.signup:active{
+    transform: scale(0.96);
+    color:lawngreen;
+}
