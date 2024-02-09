@@ -1,4 +1,6 @@
-
+.root{
+    height: 1800px;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -10,6 +12,7 @@
     padding-bottom: 30px;
     width: 600px  ;
     border-radius: 8px;
+    
     
     
 }
@@ -123,10 +126,18 @@
     background: linear-gradient(#82cf07e1,#07e668e3);
     color: #000;
 }
+.submit:hover{
+    width: 230px;
+    height: 65px;
+
+
+}
 .login:active{
     transform: scale(0.96);
     color: lawngreen;
 }
+
+
 .signup{
     margin: auto;
     color:#ffffff;

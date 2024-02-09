@@ -5,6 +5,11 @@ import App from './App';
 import LoginSignup from './Components/Loginregister/LoginSignup'
 import Register from './Components/Loginregister/Register'
 import Showstonk from './Components/showthing/Showstonk';
+import Addressadd from './Components/Address/Addressadd';
+import TreeList from './Components/TreeList/TreeList';
+import Address from './Components/insertAdd/InsertAdd'
+import Phone from './Components/telephone/Telephone'
+import Showproduct from './Components/showproduct/Showproduct'
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 
@@ -16,6 +21,11 @@ root.render(
     <Route path = '/register' element={<Register/>}></Route>
     <Route path = '/login' element={<LoginSignup/>}></Route>
     <Route path = '/shop' element={<Showstonk/>}></Route>
+    <Route path = '/profile' element={<Addressadd/>}></Route>
+    <Route path = '/treelist' element={<TreeList/>}></Route>
+    <Route path = '/Address' element={<Address/>}></Route>
+    <Route path = '/Phone' element={<Phone/>}></Route>
+    <Route path = '/showproduct' element={<Showproduct/>}></Route>
    </Routes>
    
   </BrowserRouter>

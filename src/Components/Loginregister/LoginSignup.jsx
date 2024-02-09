@@ -18,14 +18,7 @@ const LoginSignup =() =>{
     const [inputemail,setemail] = useState('');
     const [inputpass,setpass] = useState('');
     
-    useEffect(()=>{
-        if(localStorage.getItem('user-info'))
-        {
-            
-        }
-        
-        
-    },[])
+    
 async function login(){
     console.warn(inputemail,inputpass);
     let item={
@@ -46,13 +39,14 @@ async function login(){
     const data = await result.json();
         
          if (data.status === 'valid') {
-            alert(data.massage)
-            localStorage.setItem("user-info", JSON.stringify(data));
+            alert(data.message)
+            localStorage.setItem("token", JSON.stringify(data.tokens));
+            localStorage.setItem("Id", JSON.stringify(data.cus_id));
             console.log('success');
-            routepage('/App')
+            routepage('/')
         } else {
             // ล็อกอินไม่สำเร็จ
-            alert(data.massage)
+            alert(data.message)
             console.log('unsuccess');
         }
      }
@@ -63,7 +57,8 @@ async function login(){
 
     
 
-    return (<div className="container">
+    return (
+    <div className="container">
         <div className="regis-header">
         <img src={logo} alt="Logo" className="logo" />
             

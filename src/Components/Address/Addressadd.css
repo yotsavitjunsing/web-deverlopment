@@ -1,0 +1,194 @@
+.Address-container{
+    
+    
+}
+.Address-header{
+   width: 100%;
+   height: 60px;
+    background-color: blueviolet;
+}
+.Address-body{
+    display: flex;
+    flex-direction: row;
+   width: 933px;
+   height: 532.4px;
+   background: linear-gradient(#82cf07e1,#07e668e3);
+   margin: auto;
+   margin-top: 6rem;
+   border-radius: 5px;
+}
+.Address-head{
+    display: flex;
+    flex-direction: row;
+    
+    padding: 0.5rem 0 2rem 2rem;
+    
+   
+
+}
+
+.Address-head-text{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 400px;
+}
+.Address-text1{
+    font-size: 40px;
+    font-weight:bold;
+}
+.Address-BB{
+    width: 933px;
+    height: 431.6px;
+    display: inline-flex;
+}
+.Address-leftsidebody{
+    height: 522.6px;
+    width: 502.2px;
+    
+}
+.Address-leftsidebody-form{
+    height: 500px;
+    width: 480px;
+    border: 5px solid #000;
+    border-radius: 5px;
+    margin: 10px;
+    
+    
+
+}
+
+.Address-rightsidebody{
+   width: 431.1px;
+  
+   display: flex;
+   flex-direction: column;
+   align-items:normal;
+   
+}
+
+.nameAddressinform{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 2rem;
+    gap:10px;
+    
+   
+}
+.nameinform ,.emailinform{
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+    
+}
+.nameinform-input{
+    width: 300px;
+    height: 40px;
+    
+    border-radius: 4px;
+}
+.Addresslogo{
+    width: 200px; /* ปรับค่าตามต้องการ */
+    height: 200px; /* ปรับค่าตามต้องการ */
+    padding: 0 0 0 120px;
+    
+   
+   
+}
+.emailAddressinform{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 2rem;
+    gap: 0.5rem;
+}
+
+
+.Address-pencil{
+    width: 20px;
+    height: 20px;
+    padding:  0 0 0 10px;
+    cursor: pointer;
+}
+.Address-Addressinprofile{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0 0 2rem;
+    gap: 5px;
+}
+.Address-managename{
+ 
+    justify-content: center;
+}
+.Address-Addressinprofileheader{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Address-Addressinprofile-Address{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+   
+}
+
+.Address-telephonshow{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0 0 2rem;
+    gap:10px;
+}
+.Address-telephone-header{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Address-profilelist{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    padding: 0 0 0 2rem;
+}
+.Address-profilelistshow{
+position: relative;
+top: 0;
+left: 0;
+bottom: 20px;
+}
+@keyframes rotateAnimation {
+    0% {
+      transform: rotate(-90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .Address-profilelist-dropdown{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2.5px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+  
+  .Address-profilelist-dropdown-click {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2.5px;
+    transform: rotate(0deg);
+    cursor: pointer;
+    animation: rotateAnimation 0.3s ease;
+  }
+  .Address-profilelistshownone-listonlist-sublist{
+    cursor: pointer;
+  }
+  .Address-profilelist-order{cursor: pointer;
+}
+.Address-button-ck{
+    width: 25px;
+    height: 25px;
+}
+  

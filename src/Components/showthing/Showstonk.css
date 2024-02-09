@@ -1,8 +1,47 @@
-.headers{
-    display: flex;
+.headers {
+  display: flex;
   flex-direction: row;
 }
-.logo1{
-    height: 90px;
-    width: 90px;
+
+.logo1 {
+  height: 90px;
+  width: 90px;
+}
+
+.product-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+  overflow-x: auto;
+  white-space: nowrap; /* Prevent content from wrapping to the next line */
+  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
+  max-width: 950px;
+  
+}
+
+.product-row-box {
+  width: 300px; /* Adjust the width based on your design */
+  height: 350px;
+  background: linear-gradient(#EFF396, #74E291);
+  border-radius: 10px;
+  flex-shrink: 0; /* Prevent the box from shrinking */
+  scroll-snap-align: start;
+
+}
+
+.header-name-product {
+  font-size: 30px;
+  font-weight: 900;
+  height: 50px;
+}
+
+.header-all-product {
+  width: 100%;
+  height: 75%;
+}
+
+.Show-headers {
+  gap: 80;
 }

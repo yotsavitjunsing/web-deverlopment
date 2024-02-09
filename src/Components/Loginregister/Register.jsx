@@ -50,7 +50,9 @@ const Register =() =>{
 
 
 
-    return (<div className="container">
+    return (
+    
+    <div className="container">
         <div className="regis-header">
         <img src={logo} alt="Logo" className="logo" />
             
@@ -97,6 +99,7 @@ const Register =() =>{
 
 
 
-    </div>)
+    </div>
+    )
 }
 export default Register
