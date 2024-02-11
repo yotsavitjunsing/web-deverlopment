@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# ร้านขายอุปกรณ์สำหรับแต่งสวน
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+คำอธิบาย
 
-## Available Scripts
+## สารบัญ Table of Contents
 
-In the project directory, you can run:
+ - [ขั้นตอนในการติดตั้ง](#%E0%B8%82%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87)
+ - [วิธีการใช้งาน](#%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99)
 
-### `npm start`
+## ขั้นตอนในการติดตั้ง
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ 1. **เริ่มติดตั้ง node.js การติดตั้ง Node.js** มีขั้นตอนพื้นฐานดังนี้
+ - **ดาวน์โหลด Node.js:** เข้าไปที่เว็บไซต์หลักของ Node.js ที่ [nodejs.org](https://nodejs.org) และดาวน์โหลดตัวติดตั้งสำหรับระบบปฏิบัติการที่เหมาะสม (Windows, macOS, หรือ Linux).
+ 
+ - **ติดตั้ง Node.js:** เมื่อดาวน์โหลดเสร็จสิ้นแล้ว ให้เปิดไฟล์ติดตั้งที่ดาวน์โหลดขึ้นมา และทำการติดตั้งตามขั้นตอนที่แสดงบนหน้าต่างติดตั้ง.
+ 
+ - **ตรวจสอบการติดตั้ง:** เมื่อติดตั้งเสร็จสมบูรณ์ คุณสามารถตรวจสอบว่า Node.js ถูกติดตั้งได้อย่างถูกต้องหรือไม่โดยเปิด Command Prompt (Windows) หรือ Terminal (macOS, Linux) และพิมพ์คำสั่งต่อไปนี้
+ 
+ ```
+			node -v
+		คำสั่งนี้จะแสดงเวอร์ชันของ Node.js ที่ติดตั้งอยู่บนเครื่อง
+ ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **ทำการติดตั้ง git โดยไปที่** [**https://git-scm.com/downloads**](https://git-scm.com/downloads "https://git-scm.com/downloads") **เลือก เวอร์ชันที่รองรับ กับระบบปฎิบัติการ**
 
-### `npm test`
+3. **ทำการติดตั้ง visual studio code**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-	เข้าไปที่เว็บไซต์ [https://code.visualstudio.com/](https://code.visualstudio.com/ "https://code.visualstudio.com/") เลือก เวอร์ชันที่รองรับ กับระบบปฎิบัติการ
 
-### `npm run build`
+-	ทำการ install ไฟล์ที่โหลดมา
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **ทำการ clone repository**
+- **clone ในส่วนของ frontend จาก** URL [https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI](https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI "https://github.com/yotsavitjunsing/web-deverlopment?fbclid=iwar1d_xrdrfemwwqbrfgbt1gogdikjharv2mj5bitb4qiurf57jmxsmdqbyi")
+- สามารถเข้าไปคัดลอกได้ที่ ([https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI](https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI "https://github.com/yotsavitjunsing/web-deverlopment?fbclid=iwar1d_xrdrfemwwqbrfgbt1gogdikjharv2mj5bitb4qiurf57jmxsmdqbyi"))
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+จากนั้นทำการเข้าไปใน vs code แล้วเปิด terminal และทำการ clone ไฟล์มาจาก URL ดังกล่าว จากนั้นทำการให้ path ที่เราอยู่คือ web-deverlopment ตาม folder ที่โคลนมา จากนั้นทำการ ติดตั้ง react จากคำสั่ง  npm install react react-dom จากนั้นทำการ build run ได้ด้วยคำสั่ง npm start เพื่อนรันหน้าเว็บใส่ หากไม่สามารถไปหน้าอื่นได้ลองใส่คำสั่ง npm i [react-router-dom@6.21.3](mailto:react-router-dom@6.21.3 "mailto:react-router-dom@6.21.3")
