@@ -58,44 +58,29 @@ async function login(){
     
 
     return (
-    <div className="container">
-        <div className="regis-header">
-        <img src={logo} alt="Logo" className="logo" />
-            
-            <div className="under"></div>
+        <div className="loginsignup-container">
+            <div className="container">
+                <div className="regis-header">
+                    <img src={logo} alt="Logo" className="logo" />
+                    <div className="under"></div>
+                </div>
+                <div className="inputs">
+                    <div className="input">
+                        <img src={e_icon} alt="" className="icon" />
+                        <input type="email" placeholder="email" onChange={(e)=>setemail(e.target.value)}/>
+                    </div>
+                    <div className="input">
+                        <img src={p_icon} alt="" className="icon" />
+                        <input type={vistionpass===false ?"password":"text"} placeholder="password" onChange={(e)=>setpass(e.target.value)}/>
+                        <img src={vistionpass ? eyepass : eyepassslash} alt="" className="eyeicon" onClick={()=>{setvision(!vistionpass)}}/>
+                    </div>
+                    <div className="signup" onClick={()=>{routepage('/register');}}>สมัครสมาชิก</div>
+                    <div className="submit-container">
+                        <div className="submit" onClick={login}>Login</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="inputs">
-            
-            
-            <div className="input">
-                <img src={e_icon} alt="" className="icon" />
-                <input type="email" placeholder="email" onChange={(e)=>setemail(e.target.value)}/>
-            </div>
-            <div className="input">
-                <img src={p_icon} alt="" className="icon" />
-                <input type={vistionpass===false ?"password":"text"} placeholder="password" onChange={(e)=>setpass(e.target.value)}/>
-                <img src={vistionpass ? eyepass : eyepassslash} alt="" className="eyeicon" onClick={()=>{setvision(!vistionpass)}}/>
-                
-               
-            </div>
-            
-            <div className="signup" onClick={()=>{routepage('/register');}}>สมัครสมาชิก</div>
-            
-            <div className="submit-container">
-                
-                <div className="submit" onClick={login}>Login</div>
-            </div>
-            
-            
-            
-            
-        </div>
-       
-           
-
-
-
-
-    </div>)
+    )
 }
 export default LoginSignup

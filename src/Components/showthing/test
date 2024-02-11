@@ -1,0 +1,30 @@
+UPDATE products SET products.picture='P0003.JPG' WHERE products.product_id ='P0003'
+UPDATE products SET products.picture='P0004.JPG' WHERE products.product_id ='P0004'
+
+UPDATE products SET products.picture='P0006.JPG' WHERE products.product_id ='P0006'
+UPDATE products SET products.picture='P0007.JPG' WHERE products.product_id ='P0007'
+UPDATE products SET products.picture='P0008.JPG' WHERE products.product_id ='P0008'
+UPDATE products SET products.picture='P0009.JPG' WHERE products.product_id ='P0009'
+UPDATE products SET products.picture='P0010.JPG' WHERE products.product_id ='P0010'
+
+UPDATE products SET products.picture='P0015.JPG' WHERE products.product_id ='P0015'
+
+UPDATE products SET products.picture='P0019.JPG' WHERE products.product_id ='P0019'
+UPDATE products SET products.picture='P0020.JPG' WHERE products.product_id ='P0020'
+UPDATE products SET products.picture='P0021.JPG' WHERE products.product_id ='P0021'
+UPDATE products SET products.picture='P0023.JPG' WHERE products.product_id ='P0023'
+
+UPDATE products SET products.picture='P0029.JPG' WHERE products.product_id ='P0029'
+
+UPDATE products SET products.picture='P0031.JPG' WHERE products.product_id ='P0031'
+
+UPDATE products SET products.picture='P0037.JPG' WHERE products.product_id ='P0037'
+
+UPDATE products SET products.picture='P0039.JPG' WHERE products.product_id ='P0039'
+
+UPDATE products SET products.picture='P0041.JPG' WHERE products.product_id ='P0041'
+
+UPDATE products SET products.picture='P0044.JPG' WHERE products.product_id ='P0044'
+
+UPDATE products SET products.picture='P0047.JPG' WHERE products.product_id ='P0047'
+UPDATE products SET products.picture='P0048.JPG' WHERE products.product_id ='P0048'

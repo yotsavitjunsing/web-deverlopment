@@ -51,55 +51,35 @@ const Register =() =>{
 
 
     return (
-    
-    <div className="container">
-        <div className="regis-header">
-        <img src={logo} alt="Logo" className="logo" />
-            
-            <div className="under"></div>
+    <div className="loginsignup-container">
+        <div className="container1">
+            <div className="regis-header">
+                <img src={logo} alt="Logo" className="logo" />
+                <div className="under"></div>
+            </div>
+            <div className="inputs">
+                <div className="input">
+                    <img src={u_icon} alt="" className="icon" />
+                    <input type="text" placeholder="Fisrtname-lastname" onChange={(e)=>{setname(e.target.value)}} />
+                </div>  
+                <div className="input">
+                    <img src={e_icon} alt="" className="icon" />
+                    <input type="email" placeholder="email"  onChange={(e)=>{setemail(e.target.value)}}/>
+                </div>
+                <div className="input">
+                    <img src={p_icon} alt="" className="icon" />
+                    <input type={vistionpass===false ?"password":"text"} placeholder="password" onChange={(e)=>{setpass(e.target.value)}} />
+                    <img src={vistionpass ? eyepass : eyepassslash} alt="" className="eyeicon" onClick={()=>{setvision(!vistionpass)}}/>
+                </div>
+                <div className="login" onClick={()=>{routepage('/Login');}}>ล็อคอิน</div>
+                <div className="policy" onClick={()=>routepage('/nayobuy')}>นโยบายความเป็นส่วนตัว</div>
+                <div className="submit-container">
+                    <button className="submit" onClick={register} >Sign Up</button>
+                </div>
+            </div>
         </div>
-        <div className="inputs">
-            
-            <div className="input">
-                <img src={u_icon} alt="" className="icon" />
-                <input type="text" placeholder="Fisrtname-lastname" onChange={(e)=>{setname(e.target.value)}} />
-            </div>
-            
-            <div className="input">
-                <img src={e_icon} alt="" className="icon" />
-                <input type="email" placeholder="email"  onChange={(e)=>{setemail(e.target.value)}}/>
-            </div>
-            <div className="input">
-                <img src={p_icon} alt="" className="icon" />
-                <input type={vistionpass===false ?"password":"text"} placeholder="password" onChange={(e)=>{setpass(e.target.value)}} />
-                <img src={vistionpass ? eyepass : eyepassslash} alt="" className="eyeicon" onClick={()=>{setvision(!vistionpass)}}/>
-                
-               
-            </div>
-            
-            <div className="input input-date">
-            <input type= "date" />
-            </div>
-           <div className="login" onClick={()=>{routepage('/Login');}}>ล็อคอิน</div>
-           
-            <div className="policy">นโยบายความเป็นส่วนตัว</div>
-            
-            <div className="submit-container">
-                <button className="submit" onClick={register} >Sign Up</button>
-               
-            </div>
-            
-            
-            
-            
-        </div>
-       
-           
-
-
-
-
     </div>
+    
     )
 }
 export default Register

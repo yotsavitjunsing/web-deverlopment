@@ -1,7 +1,3 @@
-.Address-container{
-    
-    
-}
 .Address-header{
    width: 100%;
    height: 60px;
@@ -10,21 +6,16 @@
 .Address-body{
     display: flex;
     flex-direction: row;
-   width: 933px;
-   height: 532.4px;
-   background: linear-gradient(#82cf07e1,#07e668e3);
-   margin: auto;
-   margin-top: 6rem;
-   border-radius: 5px;
+    width: 933px;
+    height: 532.4px;
+    background: linear-gradient(#82cf07e1,#07e668e3);
+    margin: auto;
+    margin-top: 6rem;
+    border-radius: 5px;
 }
 .Address-head{
     display: flex;
     flex-direction: row;
-    
-    padding: 0.5rem 0 2rem 2rem;
-    
-   
-
 }
 
 .Address-head-text{
@@ -48,16 +39,15 @@
     
 }
 .Address-leftsidebody-form{
-    height: 500px;
-    width: 480px;
+    height: auto;
+    width: 100%;
     border: 5px solid #000;
     border-radius: 5px;
     margin: 10px;
-    
-    
-
 }
-
+.Address-rightsidebody-header{
+    text-align: center;
+}
 .Address-rightsidebody{
    width: 431.1px;
   
@@ -89,12 +79,8 @@
     border-radius: 4px;
 }
 .Addresslogo{
-    width: 200px; /* ปรับค่าตามต้องการ */
-    height: 200px; /* ปรับค่าตามต้องการ */
-    padding: 0 0 0 120px;
-    
-   
-   
+    width: 300px; /* ปรับค่าตามต้องการ */
+    height: 200px; /* ปรับค่าตามต้องการ */ 
 }
 .emailAddressinform{
     display: flex;
@@ -105,9 +91,8 @@
 
 
 .Address-pencil{
-    width: 20px;
-    height: 20px;
-    padding:  0 0 0 10px;
+    width: 40px;
+    height: 30px;
     cursor: pointer;
 }
 .Address-Addressinprofile{
@@ -184,6 +169,7 @@ bottom: 20px;
   }
   .Address-profilelistshownone-listonlist-sublist{
     cursor: pointer;
+    padding: 0 2rem;
   }
   .Address-profilelist-order{cursor: pointer;
 }
@@ -193,6 +179,8 @@ bottom: 20px;
 }
 .header-phoneshow{
     font-size: 45px;
+    display: flex;
+    justify-content: center;
 }
 .show-phone-container{
     display: flex;
@@ -209,7 +197,7 @@ bottom: 20px;
 .phone_show-intele{
     font-size: 25px;
     display: flex;
-    flex-direction: row;
+    text-align: center;
 }
 .Address-button-ck{
     cursor: pointer;
@@ -220,12 +208,57 @@ bottom: 20px;
     height: 30px;
     border: 1px solid white;
     border-radius: 6px;
-    margin: 5px 3px 0 0;
+    margin: 1rem;
     text-align: center;
-    
 }
 .telephone-button-ck{
     width: 30px;
     height: 30px;
 }
-  
+.telephone-container-phone-num{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 3rem;
+}
+.phone-sp{
+    width: 150px;
+} 
+.telephone-address-button-ck{
+    width: 100px;
+}
+.telephone-input-number{
+    width: 200px;
+    height: 5vh;
+}
+
+@media screen and (max-width: 431px) {
+    .Address-container{
+        padding: 0 1rem 5rem;
+    }
+    .Address-body{
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100%;
+    }
+    .Address-rightsidebody{
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+    .Address-leftsidebody{
+        width: 100%;
+    }
+    .InsertAdd-leftsidebody-form{
+        height: 500px;
+        width: auto;
+        padding: 1rem;
+    }
+    .Address-leftsidebody-form{
+        height: 500px;
+        width: auto;
+        padding: 1rem;
+    }
+}

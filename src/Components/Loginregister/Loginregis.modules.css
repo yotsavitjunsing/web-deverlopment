@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+}
+
 .root{
     height: 1800px;
 }
@@ -5,16 +14,23 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 100px;
     height: 100%;
     background: linear-gradient(#82cf07e1,#07e668e3);
     padding-bottom: 30px;
-    width: 600px  ;
+    width: 600px;
     border-radius: 8px;
-    
-    
-    
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+    background: linear-gradient(#82cf07e1,#07e668e3);
+    padding-bottom: 30px;
+    width: 600px;
+    border-radius: 8px;
 }
 
 .icon{
@@ -43,12 +59,14 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    padding: 0 2rem;
+    text-align: center;
 }
 .input{
     display: flex;
     align-items: center;
     margin: auto;
-    width: 480px;
+    width: 100%;
     height: 80px;
     background: #eaeaea;
     border-radius: 6px;
@@ -59,24 +77,24 @@
 
 .input img{
     margin: 0px 30px;
-
 }
 
 
 .input input{
     height: 50px;
-    width: 400px;
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
     color:#808080;
     font-size: 20px;
-    
+    margin: 0 0.5rem;
 }
-
+.input-date{
+    padding: 0 2rem;
+}
 .input-date input{
     margin: auto;
-    
 }
 .policy{
     margin: auto;
@@ -129,8 +147,6 @@
 .submit:hover{
     width: 230px;
     height: 65px;
-
-
 }
 .login:active{
     transform: scale(0.96);
@@ -144,8 +160,27 @@
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
 }
 .signup:active{
     transform: scale(0.96);
     color:lawngreen;
+}
+
+@media screen and (max-width: 431px) {
+    .loginsignup-container{
+        padding: 0 1rem;
+    }
+    .container{
+        margin-top: 100px;
+        width: 100%;
+    }
+    .container1{
+        margin-top: 60px;
+        height: auto;
+        width: 100%;
+    }
+    .inputs{
+        padding: 0 1rem;
+    }
 }

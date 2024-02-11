@@ -28,7 +28,8 @@
   border-radius: 10px;
   flex-shrink: 0; /* Prevent the box from shrinking */
   scroll-snap-align: start;
-
+  padding: 1rem;
+  
 }
 
 .header-name-product {
@@ -39,9 +40,97 @@
 
 .header-all-product {
   width: 100%;
-  height: 75%;
+  height: 490px;
+ 
 }
 
 .Show-headers {
   gap: 80;
+}
+.picture-in-oneshowproduct{
+  width: 200px;
+  height: 250px;
+}
+.show-body-container{
+  display: flex;
+  flex-direction: row;
+}
+.showstonk-menubar{
+  width: 350px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+.showstonk-menu{
+  overflow-y: hidden;
+  overflow-y: auto;
+  max-height: 405px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0 5rem;
+  gap: 2rem;
+}
+.header-in-menubar{
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  font-weight: bold;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* สีของ thumb (ส่วนที่เลื่อนขึ้น-ลง) */
+::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+  border-radius: 6px;
+}
+
+/* ใช้ใน Chrome, Safari, และ Edge */
+/* สีของ track (พื้นหลังของ scroll bar) */
+::-moz-scrollbar {
+  width: 12px;
+}
+
+/* สีของ thumb (ส่วนที่เลื่อนขึ้น-ลง) */
+::-moz-scrollbar-thumb {
+  background-color: #74E291;
+  border-radius: 6px;
+}
+.button-type-showstonk{
+  width: 100px;
+  height: auto;
+  background-color: #74E291;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.button-type-showstonk:active{
+  background-color: #fff;
+  border: 3px solid #EFF396;
+}
+
+
+@media screen and (max-width: 431px) {
+  .showstonk-menubar{
+    height: 60vh;
+    width: 220px;
+    padding: 2rem 0.5rem;
+  }
+  .showstonk-menu{
+    padding: 0 0.5rem;
+  }
+  .product-row-box{
+    width: 250px;
+  }
+  .header-name-product{
+    font-size: 25px;
+  }
 }

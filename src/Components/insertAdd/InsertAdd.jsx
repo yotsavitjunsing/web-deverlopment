@@ -556,8 +556,6 @@ const delete_adress = async()=>{
                               </div>
                               <div>รหัสไปรษณ์: {address.postcode} </div>
                               <div className="adress-input-change-provinces">
-                                
-                                       
                                 {!(substatedistrict==index)?  <div>ตำบล: {address.namesub_th} </div>:<div className="select-option-geo"><select value={subdistrict} onChange={(e) => setsubdistrict(e.target.value)} > <option value="">เลือกภูมิภาค</option>
                                   {subrecidistrict.map((subrecidistrict,index) => (
                                     <option key={index} value={subrecidistrict.subdis_id}>
@@ -615,7 +613,7 @@ const delete_adress = async()=>{
                     </div>
                     <div className="Address-rightsidebody">
                         <div className="Address-rightsidebody-header">
-                            <img src={logo} alt="" className="Addresslogo" />
+                            <img src={logo} alt="" className="Addresslogo" onClick={()=>routepage('/')} />
                         </div>
                     
                         <div className="Address-profilelist">
@@ -630,7 +628,7 @@ const delete_adress = async()=>{
                                         <li className="Address-profilelistshownone-listonlist-sublist" >ที่อยู่</li >
                                         <li  className="Address-profilelistshownone-listonlist-sublist" onClick={()=>routepage('/Phone')}>เบอร์โทรศัพท์ </li >
                                     </ul>}
-                                    <div className="Address-profilelist-order">
+                                    <div className="Address-profilelist-order" onClick={()=>routepage('/order')}>
                                 รายการสั่งซื้อ
                                  </div>
                                     </div>

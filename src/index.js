@@ -10,6 +10,8 @@ import TreeList from './Components/TreeList/TreeList';
 import Address from './Components/insertAdd/InsertAdd'
 import Phone from './Components/telephone/Telephone'
 import Showproduct from './Components/showproduct/Showproduct'
+import Nayobuy from './Components/nayobuy/Collapsible'
+import Order from './Components/Order/Order'
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 
@@ -26,6 +28,8 @@ root.render(
     <Route path = '/Address' element={<Address/>}></Route>
     <Route path = '/Phone' element={<Phone/>}></Route>
     <Route path = '/showproduct' element={<Showproduct/>}></Route>
+    <Route path = '/nayobuy' element={<Nayobuy/>}></Route>
+    <Route path = '/order' element={<Order/>}></Route>
    </Routes>
    
   </BrowserRouter>

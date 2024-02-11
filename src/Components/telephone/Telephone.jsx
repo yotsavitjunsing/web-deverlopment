@@ -173,69 +173,51 @@ const  Telephone =()=>{
 
     return(
         <div className="Address-container">
-           
             <div className="Address-body">
-                
-                
-                    <div className="Address-leftsidebody">
-                        
-                        <form action="" className="Address-leftsidebody-form">
-                            <div className="show-phone-container">
-                            <div className="header-phoneshow">เบอร์โทรศัพท์</div>
+                <div className="Address-leftsidebody">
+                    <form action="" className="Address-leftsidebody-form">
+                        <div className="show-phone-container">
+                        <div className="header-phoneshow">เบอร์โทรศัพท์</div>
                         {phonenum && phonenum.map((phone_num, index) => (
                                 (<div key={index} className="phone_show-intele">
+                                    <div className="telephone-container-phone-num">
                                     {!(statephone==index)?<div className="phone-sp">{phone_num.phone_num}</div>:<input type="text" onChange={(e)=>{setphoneinput(e.target.value);setphomealter(phone_num.phone_num);console.log(phone_num.phone_num);}}/>}
-                                 
-                                {!(textorin==index)?(<img src={pencill} alt="" className="Address-pencil" onClick={()=>{setss(index);setstatephone(index);}}/>)
-                                :(<div><img src={Acceptlogo} alt=" " className="Address-button-ck" onClick={()=>{alrterphone();setstatephone(-1);setss(-1);}}/>
+                                    {!(textorin==index)?(<img src={pencill} alt="" className="Address-pencil" onClick={()=>{setss(index);setstatephone(index);}}/>)
+                                :(<div className="telephone-address-button-ck"><img src={Acceptlogo} alt=" " className="Address-button-ck" onClick={()=>{alrterphone();setstatephone(-1);setss(-1);}}/>
                                 <img src={rejectlogo} alt="" className="Address-button-ck" onClick={()=>{setstatephone(-1);setss(-1);}}/>
                                 </div>)}
                                 {!(deletephone==index)?(<img src={trash} alt="" className="Address-pencil" onClick={()=>{setphomealter(phone_num.phone_num);setdeletephon(index);}}/>)
-                                :(<div><img src={Acceptlogo} alt=" " className="Address-button-ck" onClick={()=>{delete_mphone();setdeletephon(-1);}}/>
+                                :(<div className="telephone-address-button-ck"><img src={Acceptlogo} alt=" " className="Address-button-ck" onClick={()=>{delete_mphone();setdeletephon(-1);}}/>
                                 <img src={rejectlogo} alt="" className="Address-button-ck" onClick={()=>{setdeletephon(-1);}}/>
-                                </div>)}
-                                </div>)
-                                
+                                </div>)}</div>
+                                </div>)   
                             ))}
-                            
-                            {addphone?<div></div>:<input type="text" onChange={(e)=>{setphoneinput(e.target.value);}} onClick={()=>{setuseStatephonead(false);}}></input>}
+                            {addphone?<div></div>:<input type="text" className="telephone-input-number" onChange={(e)=>{setphoneinput(e.target.value);}} onClick={()=>{setuseStatephonead(false);}}></input>}
                             {addphone?<div className="summit-button-telephoneadd" onClick={()=>{setaddphone(!addphone)}}>เพิ่มเบอร์โทร</div>:<div className="summit-button-telephoneadd" onClick={()=>{setaddphone(!addphone);setuseStatephonead(true);}}>ยกเลิก</div>}</div>
                             {(useStatephoneadd)?(<div></div>):(<div className="show-phone-containerx"><img src={Acceptlogo} alt=" " className="telephone-button-ck" onClick={()=>{add_phone_num();setaddphone(!addphone);setuseStatephonead(!useStatephoneadd);}}/>
                                 <img src={rejectlogo} alt="" className="telephone-button-ck" onClick={()=>{setuseStatephonead(!useStatephoneadd);setaddphone(!addphone);}}/></div>)}
-                        </form>
-                        
+                    </form>
+                </div>
+                <div className="Address-rightsidebody">
+                    <div className="Address-rightsidebody-header">
+                        <img src={logo} alt="" className="Addresslogo" onClick={()=>routepage('/')} />
                     </div>
-                    <div className="Address-rightsidebody">
-                        <div className="Address-rightsidebody-header">
-                            <img src={logo} alt="" className="Addresslogo" />
-                        </div>
-                    
-                        <div className="Address-profilelist">
-                            <img src={dropdown} alt="" className={menudropdown?"Address-profilelist-dropdown":"Address-profilelist-dropdown-click"}  onClick={()=>setmenudropdrow(!menudropdown)}/>
-                            {/* <img src= {require('../Assets/picture/hide.png')} alt="" /> */}
-                                
-                                    <div className="Address-profilelistshow">
-                                    บัญชีผู้ใช้
-                                    { menudropdown ? <div className="Address-profilelistshownone"></div>:
-                                    <ul className="Address-profilelistshownone-listonlist">
-                                        <li className="Address-profilelistshownone-listonlist-sublist" onClick={()=>routepage('/profile')}>ข้อมูลผู้ใช้ </li>
-                                        <li className="Address-profilelistshownone-listonlist-sublist" onClick={()=>routepage('/Address')}>ที่อยู่</li >
-                                        <li  className="Address-profilelistshownone-listonlist-sublist">เบอร์โทรศัพท์</li >
-                                    </ul>}
-                                    <div className="Address-profilelist-order">
-                                รายการสั่งซื้อ
-                                 </div>
-                                    </div>
-                                </div>
-                               
-                        
-                    
-                        
+                    <div className="Address-profilelist">
+                        <img src={dropdown} alt="" className={menudropdown?"Address-profilelist-dropdown":"Address-profilelist-dropdown-click"}  onClick={()=>setmenudropdrow(!menudropdown)}/>
+                        {/* <img src= {require('../Assets/picture/hide.png')} alt="" /> */}
+                            <div className="Address-profilelistshow">
+                                บัญชีผู้ใช้
+                                { menudropdown ? <div className="Address-profilelistshownone"></div>:
+                                <ul className="Address-profilelistshownone-listonlist">
+                                    <li className="Address-profilelistshownone-listonlist-sublist" onClick={()=>routepage('/profile')}>ข้อมูลผู้ใช้ </li>
+                                    <li className="Address-profilelistshownone-listonlist-sublist" onClick={()=>routepage('/Address')}>ที่อยู่</li >
+                                    <li  className="Address-profilelistshownone-listonlist-sublist">เบอร์โทรศัพท์</li >
+                                </ul>}
+                                <div className="Address-profilelist-order" onClick={()=>routepage('/order')}>รายการสั่งซื้อ</div>
+                            </div>
                     </div>
-               
-                
+                </div>
             </div>
-
         </div>
         
     );
