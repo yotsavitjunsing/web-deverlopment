@@ -33,4 +33,8 @@
 - **clone ในส่วนของ frontend จาก** URL [https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI](https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI "https://github.com/yotsavitjunsing/web-deverlopment?fbclid=iwar1d_xrdrfemwwqbrfgbt1gogdikjharv2mj5bitb4qiurf57jmxsmdqbyi")
 - สามารถเข้าไปคัดลอกได้ที่ ([https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI](https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI "https://github.com/yotsavitjunsing/web-deverlopment?fbclid=iwar1d_xrdrfemwwqbrfgbt1gogdikjharv2mj5bitb4qiurf57jmxsmdqbyi"))
 
-จากนั้นทำการเข้าไปใน vs code แล้วเปิด terminal และทำการ clone ไฟล์มาจาก URL ดังกล่าว จากนั้นทำการให้ path ที่เราอยู่คือ web-deverlopment ตาม folder ที่โคลนมา จากนั้นทำการ ติดตั้ง react จากคำสั่ง  npm install react react-dom จากนั้นทำการ build run ได้ด้วยคำสั่ง npm start เพื่อนรันหน้าเว็บใส่ หากไม่สามารถไปหน้าอื่นได้ลองใส่คำสั่ง npm i [react-router-dom@6.21.3](mailto:react-router-dom@6.21.3 "mailto:react-router-dom@6.21.3")
+จากนั้นทำการเข้าไปใน vs code แล้วเปิด terminal และทำการ clone ไฟล์มาจาก URL ดังกล่าว จากนั้นทำการให้ path ที่เราอยู่คือ web-deverlopment ตาม folder ที่โคลนมา จากนั้นทำการ ติดตั้ง react จากคำสั่ง  npm install react react-dom จากนั้นทำการ build run ได้ด้วยคำสั่ง npm start เพื่อนรันหน้าเว็บใส่ 
+```
+		npm i react-router-dom@6.21.3
+	ลองใส่คำสั่งนี้หากไม่สามารถไปหน้าอื่นได้
+```
