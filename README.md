@@ -25,7 +25,7 @@
 
 3. **ทำการติดตั้ง visual studio code**
 
--	เข้าไปที่เว็บไซต์ [https://code.visualstudio.com/](https://code.visualstudio.com/ "https://code.visualstudio.com/") เลือก เวอร์ชันที่รองรับ กับระบบปฎิบัติการ
+-	**เข้าไปที่เว็บไซต์** [https://code.visualstudio.com/](https://code.visualstudio.com/ "https://code.visualstudio.com/") เลือก เวอร์ชันที่รองรับ กับระบบปฎิบัติการ
 
 -	ทำการ install ไฟล์ที่โหลดมา
 
@@ -37,4 +37,30 @@
 ```
 		npm i react-router-dom@6.21.3
 	ลองใส่คำสั่งนี้หากไม่สามารถไปหน้าอื่นได้
+
+	จากนั้นหลังจาก Run Code เสร็จขั้นตอนต่อไปให้เข้าหน้านี้
+		https://github.com/yotsavitjunsing/train
 ```
+- **clone ส่วนของ backend จาก URL โดยทำตามขั้นตอน**
+
+- **จาก URL** ([https://github.com/yotsavitjunsing/train.git](https://github.com/yotsavitjunsing/train.git "https://github.com/yotsavitjunsing/train.git"))
+
+หากไม่ได้สามารถไปคัดลอกได้ที่ 
+([https://github.com/yotsavitjunsing/train?fbclid=IwAR3PvIVHmq6O2jkf1ay2ZUXh2xk6uko4OEOfAdfGpE4LniV21vhYHx-fums](https://github.com/yotsavitjunsing/train?fbclid=IwAR3PvIVHmq6O2jkf1ay2ZUXh2xk6uko4OEOfAdfGpE4LniV21vhYHx-fums "https://github.com/yotsavitjunsing/train?fbclid=iwar3pvivhmq6o2jkf1ay2zuxh2xk6uko4oeofadfgpe4lniv21vhyhx-fums"))
+
+```
+	จากนั้นให้ไปนำ Databases จากการเข้าหน้านี้
+		https://github.com/yotsavitjunsing/-new_api
+```
+- **จากนั้นทำการ download XAMPP** และเมื่อดาวโหลดและทำการติดตั้งแล้วเสร็จ ทำการกดปุ่ม start ตรงช่อง mysql เพื่อใช้งาน ฐานข้อมูลในที่นี้ ทางผู้จัดทำได้ทำการใช้ Heidi ในการจัดการข้อมูลต่างๆใน MariaDB จากนั้นให้ นำไฟล์ sql ใน [https://github.com/yotsavitjunsing/-new_api.git](https://github.com/yotsavitjunsing/-new_api.git "https://github.com/yotsavitjunsing/-new_api.git") สามารถทำได้ทั้ง clone และ download จากนั้นนำข้อมูลในไฟล์ที่ download ไปใส่ Heidi สามารถทำได้ โดยการเปิด cmd และ ทำการ cd..จนกว่าจะอยู่ path C: จากนั้น cd xampp, cd mysql, cd bin จากนั้นทำการ เขียนคำสั่ง mysql -u root <ตามด้วย pathที่เก็บไฟล์ garden_shop.sql ไว้ จากนั้นทำ
+
+เมื่อเข้าไปใน Heidi ทำการ ตั้ง password ใน Query จากคำสั่ง
+
+**ALTER USER 'root'@'localhost' IDENTIFIED BY 'admin@123';**
+
+- ทำการ build run แต่ละไฟล์ เริ่มต้นเปิด vscode แล้วนนำ folder ที่ได้มากจากการ clone repository 
+[GitHub - yotsavitjunsing/train](https://github.com/yotsavitjunsing/train) เข้า terminal และทำให้ path ไปอยู่ที่ train และทำการใช้คำสั่ง npm start เพื่อ build run api เมื่อทำการ build run เสร็จจากนั้น ไป ที่ไฟล์ ที่ clone มาจาก ([https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI](https://github.com/yotsavitjunsing/web-deverlopment?fbclid=IwAR1d_xrDrfemWwQBrfGbt1gogDikjharv2mj5BiTB4qIURf57JmxSMdqByI "https://github.com/yotsavitjunsing/web-deverlopment?fbclid=iwar1d_xrdrfemwwqbrfgbt1gogdikjharv2mj5bitb4qiurf57jmxsmdqbyi")**)**
+
+จากนั้นเปิดไฟล์ใน vscode แล้วทำให้ path ไปอยู่ที่ web-deverlopment จากนั้นใช้งานคำสั่ง npm start เพื่อ build run
+
+จากนั้นสามารถ ทดลองใช้งานเว็บไซต์ได้เลย
