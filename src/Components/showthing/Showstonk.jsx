@@ -105,7 +105,7 @@ const Showstonk = () => {
                 }
             } catch (error) {
                 console.error('Error:', error);
-                alert('Error fetching product data.');
+                
                 
             }
         }
@@ -131,7 +131,7 @@ const Showstonk = () => {
                 }
             } catch (error) {
                 console.error('Error:', error);
-                alert('Error fetching product data.');
+                
                 
             }
         }
